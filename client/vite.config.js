@@ -31,6 +31,7 @@ export default defineConfig({
     "process.env": {
       VITE_API_URL: process.env.VITE_API_URL, // ✅ Enables process.env.VITE_API_URL in app
       VITE_RAZORPAY_API_KEY: process.env.VITE_RAZORPAY_API_KEY,
+      VITE_RECOMMENDATION_API_URL: process.env.VITE_RECOMMENDATION_API_URL,
     },
   },
 });
