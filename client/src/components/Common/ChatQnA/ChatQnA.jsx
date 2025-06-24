@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import ChatBot from "../../../assets/images/Layouts/ChatBot.png";
+import ChatBot from "../../../assets/images/Layouts/ChatBot.gif";
 import axios from "axios";
 import { useThemeProvider } from "../../AdminDashboard/utils/ThemeContext"; // Update this path
 
@@ -457,12 +457,12 @@ const ChatQnA = () => {
       <button
         ref={buttonRef}
         onClick={togglePopup}
-        className={`fixed bottom-20 right-4 ${bgClass} p-2 rounded-full shadow-lg hover:shadow-xl transition-shadow z-50 ${
+        className={`fixed bottom-20 right-4 bg-transparent p-2 rounded-full cursor-pointer z-50 ${
           isOpen ? "opacity-0" : "opacity-100"
         }`}
         style={{ display: isOpen ? "none" : "block" }}
       >
-        <img src={ChatBot} alt="ChatBot" className="w-10 h-10" />
+        <img src={ChatBot} alt="ChatBot" className="w-20 h-20" />
       </button>
 
       {/* Chat popup with animation */}
