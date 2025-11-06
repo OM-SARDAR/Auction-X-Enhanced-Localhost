@@ -10,13 +10,13 @@ _Transforming Auctions Into Limitless Opportunities_
 
 ## Frontend Technologies:  
 
-### Framework & Core  
+### Framework & Core
 ![React](https://img.shields.io/badge/Frontend-React-blue)
 ![React DOM](https://img.shields.io/badge/Rendering-React%20DOM-lightgrey)
 ![Redux Toolkit](https://img.shields.io/badge/State-Redux%20Toolkit-purple)
 ![Redux Persist](https://img.shields.io/badge/Persistence-Redux%20Persist-brightgreen)
 ![React Router](https://img.shields.io/badge/Routing-React%20Router-orange)
-### Styling & UI  
+### Styling & UI
 ![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-teal)
 ![PostCSS](https://img.shields.io/badge/PostCSS-PostCSS-pink)
 ![Shadcn UI](https://img.shields.io/badge/UI-Shadcn%20UI-lightblue)
