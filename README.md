@@ -2,9 +2,9 @@
 
 _Transforming Auctions Into Limitless Opportunities_
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Language](https://img.shields.io/badge/language-JavaScript-blue)
-
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
 ## Built with the rocks and technologies:
 
@@ -93,19 +93,23 @@ _Transforming Auctions Into Limitless Opportunities_
 
 ## Overview
 
-**AUCTION-X-LOCALHOST** is a full-stack developer toolkit for building dynamic online auction platforms with real-time bidding, user management, and comprehensive admin controls.  
-It combines a robust backend with interactive frontend components to deliver seamless, engaging marketplace experiences. Whether you're managing products, orders, or user profiles, this project provides the essential features to develop scalable and secure auction applications.
+**AUCTION-X-ENHANCED-LOCALHOST** is a full-stack developer toolkit for building intelligent online auction platforms with real-time bidding, AI-driven product recommendations, and integrated Google authentication. It combines a powerful backend, responsive frontend, and a dedicated machine learning microservice for personalized experiences. With enhanced security layers, Redis caching, and an AI chatbot assistant powered by Google Gemini, this version delivers a seamless, scalable, and data-driven auction environment designed for performance, reliability, and innovation.
 
-### Why AUCTION-X-LOCALHOST?
+### Why AUCTION-X-ENHANCED-LOCALHOST?
 
-This project streamlines the development of online auction systems with:
+This project streamlines the development of AI-powered online auction systems with:
 
-- ✅ **Real-Time Bidding:** Enable live auctions with WebSocket-powered updates.
-- ✅ **User Authentication:** Secure login, profile management, and role-based access control.
-- ✅ **Admin Dashboard:** Visualize revenue, orders, and customer data for efficient management.
-- ✅ **Media Management:** Integrate Cloudinary for smooth image and video handling.
-- ✅ **Secure Notifications:** OTP and email utilities for user verification and communication.
-- ✅ **Modular Architecture:** Clear separation of backend, frontend, utilities, and middleware for scalability.
+✓ Real-Time Bidding: Enable live auctions with WebSocket-powered updates (via Socket.io) for seamless user experience.
+✓ User Authentication: Secure login, registration, and profile management — including Google OAuth integration alongside traditional authentication.
+✓ AI-Powered Recommendations: Personalized product recommendations generated using a FastAPI + Machine Learning microservice.
+✓ AI Chatbot Assistant (Google Gemini): Built-in AI assistant that provides intelligent guidance and answers about app features, without controlling internal functionalities.
+✓ Admin Dashboard: Visualize insights like revenue, top bidders, active auctions, and engagement analytics.
+✓ Media Management: Cloudinary integration for reliable and fast image/video uploads.
+✓ Secure Notifications: OTP and email-based verification powered by Nodemailer for robust user communication.
+✓ Performance Optimization: Caching system with Redis for faster response times and reduced server load.
+✓ Enhanced Security: Implemented Helmet, CSURF, bcrypt, and rate limiting to ensure strong protection across APIs.
+✓ Modular Architecture: Cleanly separated backend, frontend, ML service, and middleware layers for easy scalability and maintenance.
+✓ Data Integrity: MongoDB for structured, persistent data — with AI and user interactions stored securely for analysis.
 
 ---
 
