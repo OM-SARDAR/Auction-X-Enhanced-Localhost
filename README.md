@@ -307,9 +307,9 @@ cd client
 npm run dev
 ```
 
-✓ Backend runs on http://localhost:5000 
-✓ Proxy server runs on http://localhost:8000  
-✓ Frontend runs on http://localhost:3000
+✓ Backend runs on http://localhost:5000  
+✓ Proxy server runs on http://localhost:8000   
+✓ Frontend runs on http://localhost:3000  
 
 Open your browser → go to http://localhost:3000
 
@@ -317,13 +317,14 @@ Create a test account or log in using Google.
 
 Try out the main features:
 
-• Add a product for auction  
-• Join a product’s live auction  
-• Place bids  
-• See if the bids update instantly (real-time using Socket.io)  
-• Check if notifications appear when someone outbids you  
-• Check MongoDB (optional)  
-• Open your MongoDB database  
-• Make sure the new product, bids, and users are being saved correctly  
+• Add a product for auction — the process is now smoother, faster, and more secure.  
+• Join a product’s live auction and place bids — all updates happen instantly in real time using Socket.io.  
+• Check AI-driven product recommendations based on your interaction history.  
+• Login seamlessly with Google (along with standard email authentication).  
+• Use the AI Chatbot Assistant (powered by Google Gemini) to get guidance, explanations, or suggestions about the app’s features — note that it does not control bidding or internal functionalities, it only provides insights.  
+• Review MongoDB (optional) to confirm data integrity:  
 
-That’s all for manual testing — it’s about making sure everything feels and works right.
+Ensure new products, bids, users, and AI recommendations are saved correctly.  
+• Experience smoother animations, improved UI effects, and enhanced security features.  
+
+That’s all for manual testing — the goal is to verify that everything works reliably, AI recommendations are accurate, and the real-time and user experience improvements feel seamless.
