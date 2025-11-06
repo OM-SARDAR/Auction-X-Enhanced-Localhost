@@ -1,4 +1,4 @@
-# AUCTION-X-LOCALHOST
+# AUCTION-X-ENHANCED-LOCALHOST
 
 _Transforming Auctions Into Limitless Opportunities_
 
