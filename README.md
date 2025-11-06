@@ -42,6 +42,14 @@ _Transforming Auctions Into Limitless Opportunities_
 ![jsPDF](https://img.shields.io/badge/Export-jsPDF-10B981?logo=javascript&logoColor=white)
 ![pdf-lib](https://img.shields.io/badge/Export-pdf--lib-3B82F6?logo=javascript&logoColor=white)
 
+## Backend Technologies (Proxy Server): 
+![FastAPI](https://img.shields.io/badge/Framework-FastAPI-009688?logo=fastapi&logoColor=white)
+![Uvicorn](https://img.shields.io/badge/Server-Uvicorn-000000?logo=python&logoColor=white)
+![PyMongo](https://img.shields.io/badge/DB-PyMongo-47A248?logo=mongodb&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/ML-Scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Data-Pandas-150458?logo=pandas&logoColor=white)
+![Python Dotenv](https://img.shields.io/badge/Config-Python%20Dotenv-4ADE80?logo=python&logoColor=white)
+
 ## Backend Technologies:  
 
 ![Node.js](https://img.shields.io/badge/Runtime-Node.js-339933?logo=node.js&logoColor=white)
@@ -116,23 +124,149 @@ This project requires the following dependencies:
 
 Build AUCTION-X-LOCALHOST from the source and install dependencies:
 
-1. Clone the repository:
+### 1. Clone the repository:
 
 ```
 git clone https://github.com/OM-SARDAR/AUCTION-X-LOCALHOST
 ```
 
-2. Go to project folder
+### 2. Go to project folder
 ```
-cd AUCTION-X-LOCALHOST
+cd Auction-X-Enhanced-Localhost
 ```
+### 3. FOR THE FRONTEND PART :------------------------------------------------------------------------
 
-3. Install dependencies along with node mofules
-```
-npm install
-```
+  A. Go to "client" folder for accessing frontend
+  ```
+  cd client
+  ```
+  B. Create a .env file inside "client" folder
+  ```
+  # Step 1: Create a new .env file
+  # (This creates the file if it doesn’t exist)
+  touch .env
 
-4. Start the project
+  # Step 2: Open the .env file in your code editor (VS Code example)
+  code .env
+
+  # Step 3: Add your environment variable inside the file
+  # Example:
+  # REACT_APP_RAZORPAY_API_KEY=YOUR_RAZORPAY_API_KEY_HERE
+  ```
+
+  C. Install dependencies along with node mofules
+  ```
+  npm install
+  ```
+
+  D. Start the server side
+  ```
+  npm start
+  ```
+
+### 4. FOR THE BACKEND PART :------------------------------------------------------------------------
+
+  A. Go to "server" folder for accessing backend
+  ```
+  cd server
+  ```
+  B. Create a .env file inside "server" folder
+  ```
+  # Step 1: Create a new .env file
+  # (This creates the file if it doesn’t exist)
+  touch .env
+
+  # Step 2: Open the .env file in your code editor (VS Code example)
+  code .env
+
+  # Step 3: Add your environment variables inside the file
+  # Example:
+  # JWT_SECRETE=YOUR_JWT_SECRET_HERE
+  # PORT=5000
+  # MONGODB_URL=mongodb+srv://<YOUR_USERNAME:YOUR_PASSWORD@cluster0.tolhj.mongodb.net/YOUR_SCHEMA_NAME?retryWrites=true&w=majority&appName=Cluster0
+  # GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID_HERE
+  # GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET_HERE
+  # EMAIL_USER=YOUR_EMAIL_ADDRESS_HERE
+  # EMAIL_PASS=YOUR_EMAIL_PASSWORD_HERE
+  # CLOUDINARY_CLOUD_NAME=YOUR_CLOUDINARY_CLOUD_NAME_HERE
+  # CLOUDINARY_API_KEY=YOUR_CLOUDINARY_API_KEY_HERE
+  # CLOUDINARY_API_SECRET=YOUR_CLOUDINARY_API_SECRET
+  ```
+  C. Install dependencies along with node mofules
+  ```
+  npm install
+  ```
+
+  D. Start the client side
+  ```
+  npm start
+  ```
+---
+
+## Usage
+To run the project locally, follow these steps:
+
+For Backend (Server)
+  ```
+  cd server
+  npm install
+  npm start
+  ```
+This starts the backend server using Express and Socket.io on the configured port (default: http://localhost:5000).
+
+For Frontend (Client)
+ ```
+ cd client
+ npm install
+ npm start
+ ```
+This runs the React frontend on http://localhost:3000.
+
+Access the App
+
+Once both servers are running, open your browser and go to:
 ```
+ http://localhost:3000
+```
+You can now:
+
+• Register or log in with Google or email  
+• Create, join, and participate in live auctions  
+• Place bids in real time (powered by Socket.io)  
+• View and update products dynamically through the API  
+
+---
+
+## Testing
+
+Steps:
+
+Start both backend and frontend servers
+```
+cd server
 npm start
 ```
+```
+cd client
+npm start
+```
+
+✓ Backend runs on http://localhost:5000  
+✓ Frontend runs on http://localhost:3000
+
+Open your browser → go to http://localhost:3000
+
+Create a test account or log in using Google.
+
+Try out the main features:
+
+• Add a product for auction  
+• Join a product’s live auction  
+• Place bids  
+• See if the bids update instantly (real-time using Socket.io)  
+• Check if notifications appear when someone outbids you  
+• Check MongoDB (optional)  
+• Open your MongoDB database  
+• Make sure the new product, bids, and users are being saved correctly  
+
+That’s all for manual testing — it’s about making sure everything feels and works right.
