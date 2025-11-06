@@ -193,8 +193,14 @@ cd Auction-X-Enhanced-Localhost
   # CLOUDINARY_CLOUD_NAME=YOUR_CLOUDINARY_CLOUD_NAME_HERE
   # CLOUDINARY_API_KEY=YOUR_CLOUDINARY_API_KEY_HERE
   # CLOUDINARY_API_SECRET=YOUR_CLOUDINARY_API_SECRET
+  # NODE_ENV=development
+  # CLIENT_URL=http://localhost:3000
+  # GOOGLE_API_KEY=YOUR_GOOGLE_API_KEY
+  # GOOGLE_CSE_ID=YOUR_GOOGLE_CSE_ID
+  # GENERATIVE_API_KEY=YOUR_GENERATIVE_API_KEY
+
   ```
-  C. Install dependencies along with node mofules
+  C. Install dependencies along with node modules
   ```
   npm install
   ```
@@ -202,6 +208,42 @@ cd Auction-X-Enhanced-Localhost
   D. Start the server side
   ```
   npm start
+  ```
+
+### 5. FOR THE PROXY BACKEND PART :------------------------------------------------------------------------
+
+  A. Go to "recommendation_service" folder for accessing proxy backend
+  ```
+  cd recommendation_service
+  ```
+  B. Create a .env file inside "recommendation_service" folder
+  ```
+  # Step 1: Create a new .env file
+  # (This creates the file if it doesn’t exist)
+  touch .env
+
+  # Step 2: Open the .env file in your code editor (VS Code example)
+  code .env
+
+  # Step 3: Add your environment variables inside the file
+  # Example:
+  # MONGODB_URI=mongodb+srv://<YOUR_USERNAME:YOUR_PASSWORD@cluster0.tolhj.mongodb.net/YOUR_SCHEMA_NAME?retryWrites=true&w=majority&appName=Cluster0
+  # MONGODB_DB=YOUR_MONGODB_DB_SCHEMA_NAME
+
+  ```
+  C. Install dependencies
+  ```
+  pip install -r requirements.txt
+  ```
+
+  D. Start the proxy server
+  ```
+  uvicorn main:app --reload --host 0.0.0.0 --port 8000
+  
+  # main:app → main is your Python file name (main.py), app is the FastAPI instance.
+  # --reload → automatically reloads on code changes (useful for development).
+  #--host 0.0.0.0 → allows access from other machines (optional for local dev).
+  #--port 8000 → matches the recommendation API URL in your .env.
   ```
 ---
 
@@ -216,11 +258,19 @@ For Backend (Server)
   ```
 This starts the backend server using Express and Socket.io on the configured port (default: http://localhost:5000).
 
+For Backend (Server)
+  ```
+  cd recommendation_service
+  pip install -r requirements.txt
+  uvicorn main:app --reload --host 0.0.0.0 --port 8000
+  ```
+This starts the proxy server using FastAPI and Uvicorn on the configured port (default: http://localhost:8000).
+
 For Frontend (Client)
  ```
  cd client
  npm install
- npm start
+ npm run dev
  ```
 This runs the React frontend on http://localhost:3000.
 
@@ -243,17 +293,22 @@ You can now:
 
 Steps:
 
-Start both backend and frontend servers
+Start backend , proxy server and frontend 
 ```
 cd server
 npm start
 ```
 ```
+cd recommendation_service
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+```
 cd client
-npm start
+npm run dev
 ```
 
-✓ Backend runs on http://localhost:5000  
+✓ Backend runs on http://localhost:5000 
+✓ Proxy server runs on http://localhost:8000  
 ✓ Frontend runs on http://localhost:3000
 
 Open your browser → go to http://localhost:3000
