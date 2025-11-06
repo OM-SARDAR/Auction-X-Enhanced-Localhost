@@ -1,6 +1,6 @@
 # AUCTION-X-ENHANCED-LOCALHOST
 
-_Transforming Auctions Into Limitless Opportunities_
+_Transforming Auctions Into Limitless Opportunities With AI_
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
