@@ -127,7 +127,7 @@ Build AUCTION-X-LOCALHOST from the source and install dependencies:
 ### 1. Clone the repository:
 
 ```
-git clone https://github.com/OM-SARDAR/AUCTION-X-LOCALHOST
+git clone https://github.com/OM-SARDAR/Auction-X-Enhanced-Localhost.git
 ```
 
 ### 2. Go to project folder
@@ -151,17 +151,19 @@ cd Auction-X-Enhanced-Localhost
 
   # Step 3: Add your environment variable inside the file
   # Example:
-  # REACT_APP_RAZORPAY_API_KEY=YOUR_RAZORPAY_API_KEY_HERE
+  # VITE_API_URL=http://localhost:5000  # Your backend API URL (or your domain)
+  # VITE_RECOMMENDATION_API_URL=http://localhost:8000/api # Recommendation API URL (or your domain)
+  # VITE_RAZORPAY_API_KEY=YOUR_RAZORPAY_API_KEY_HERE
   ```
 
-  C. Install dependencies along with node mofules
+  C. Install dependencies along with node modules
   ```
   npm install
   ```
 
-  D. Start the server side
+  D. Start the client side
   ```
-  npm start
+  npm run dev
   ```
 
 ### 4. FOR THE BACKEND PART :------------------------------------------------------------------------
@@ -197,7 +199,7 @@ cd Auction-X-Enhanced-Localhost
   npm install
   ```
 
-  D. Start the client side
+  D. Start the server side
   ```
   npm start
   ```
