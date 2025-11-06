@@ -113,11 +113,13 @@ This project streamlines the development of online auction systems with:
 
 ### Prerequisites
 
-This project requires the following dependencies:
+This project requires the following dependencies installed on your system:
 
-- 📦 **Programming Language:** JavaScript  
-- 📦 **Package Manager:** NPM
-
+📦 Programming Language: JavaScript (for the main Node.js backend & React frontend)  
+📦 Package Manager: NPM (for managing Node.js dependencies)  
+🐍 Python 3.8+ (for the AI recommendation service using FastAPI)  
+🧠 Redis (for caching AI recommendations and improving performance)  
+🗄️ MongoDB (for storing users, products, bids, and AI data)  
 ---
 
 ## Installation
