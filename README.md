@@ -99,17 +99,17 @@ _Transforming Auctions Into Limitless Opportunities With AI_
 
 This project streamlines the development of AI-powered online auction systems with:
 
-✓ Real-Time Bidding: Enable live auctions with WebSocket-powered updates (via Socket.io) for seamless user experience.
-✓ User Authentication: Secure login, registration, and profile management — including Google OAuth integration alongside traditional authentication.
-✓ AI-Powered Recommendations: Personalized product recommendations generated using a FastAPI + Machine Learning microservice.
-✓ AI Chatbot Assistant (Google Gemini): Built-in AI assistant that provides intelligent guidance and answers about app features, without controlling internal functionalities.
-✓ Admin Dashboard: Visualize insights like revenue, top bidders, active auctions, and engagement analytics.
-✓ Media Management: Cloudinary integration for reliable and fast image/video uploads.
-✓ Secure Notifications: OTP and email-based verification powered by Nodemailer for robust user communication.
-✓ Performance Optimization: Caching system with Redis for faster response times and reduced server load.
-✓ Enhanced Security: Implemented Helmet, CSURF, bcrypt, and rate limiting to ensure strong protection across APIs.
-✓ Modular Architecture: Cleanly separated backend, frontend, ML service, and middleware layers for easy scalability and maintenance.
-✓ Data Integrity: MongoDB for structured, persistent data — with AI and user interactions stored securely for analysis.
+✓ Real-Time Bidding: Enable live auctions with WebSocket-powered updates (via Socket.io) for seamless user experience.  
+✓ User Authentication: Secure login, registration, and profile management — including Google OAuth integration alongside traditional authentication.  
+✓ AI-Powered Recommendations: Personalized product recommendations generated using a FastAPI + Machine Learning microservice.  
+✓ AI Chatbot Assistant (Google Gemini): Built-in AI assistant that provides intelligent guidance and answers about app features, without controlling internal functionalities.  
+✓ Admin Dashboard: Visualize insights like revenue, top bidders, active auctions, and engagement analytics.  
+✓ Media Management: Cloudinary integration for reliable and fast image/video uploads.  
+✓ Secure Notifications: OTP and email-based verification powered by Nodemailer for robust user communication.  
+✓ Performance Optimization: Caching system with Redis for faster response times and reduced server load.  
+✓ Enhanced Security: Implemented Helmet, CSURF, bcrypt, and rate limiting to ensure strong protection across APIs.  
+✓ Modular Architecture: Cleanly separated backend, frontend, ML service, and middleware layers for easy scalability and maintenance.  
+✓ Data Integrity: MongoDB for structured, persistent data — with AI and user interactions stored securely for analysis.  
 
 ---
 
